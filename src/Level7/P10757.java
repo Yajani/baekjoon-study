@@ -1,20 +1,18 @@
 package src.Level7;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+
+import java.math.BigInteger;
+import java.util.Scanner;
 
 public class P10757 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
+    public static void main(String[] args)  {
+        Scanner sc = new Scanner(System.in);
 
-        String str = br.readLine();
-        StringTokenizer st = new StringTokenizer(str," "); //공백으로 분리하기
+        BigInteger A = new BigInteger(sc.next());
+        BigInteger B = new BigInteger(sc.next());
 
-        int a = Integer.parseInt(st.nextToken());
-        int b = Integer.parseInt(st.nextToken());
+        A = A.add(B);
+        System.out.println(A.toString());
 
-        System.out.println(a+b);
     }
 }
