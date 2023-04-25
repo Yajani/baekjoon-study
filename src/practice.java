@@ -1,31 +1,33 @@
-package src;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.util.Objects;
-import java.util.Scanner;
-
-public class practice {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-//        String Line1 = sc.nextLine();
-        char[][] word = new char[5][];
-
-        for (int i = 0; i < 5; i++) {
-            String Line1 = sc.nextLine();
-            for (int j = 0; j < Line1.length(); j++) word[i][j] = Line1.charAt(j);
-        }
-
-        for (int i = 0; i < 15; i++) {
-            for (int j = 0; j < word.length; j++) {
-                if (Objects.equals(word[j][i], "")) {
-                    continue;
-                } else {
-                    System.out.println(word[j][i]);
-                }
-            }
-        }
-
-
-    }
-}
+//import java.io.BufferedReader;
+//import java.io.IOException;
+//import java.io.InputStreamReader;
+//import java.util.ArrayList;
+//import java.util.Arrays;
+//import java.util.List;
+//import java.util.StringTokenizer;
+//
+//public class Main {
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        StringBuilder sb = new StringBuilder();
+//
+//        char[][] arr = new char[5][15];
+//
+//        for(int i = 0; i < 5; i++) {
+//            String s = br.readLine();
+//
+//            for(int j = 0; j < s.length(); j++) {
+//                arr[i][j] = s.charAt(j);
+//            }
+//        }
+//
+//        for(int i = 0; i < 15; i++) {
+//            for(int j = 0; j < 5; j++) {
+//                if(arr[j][i] != '\0')
+//                    sb.append(arr[j][i]);
+//            }
+//        }
+//
+//        System.out.println(sb);
+//    }
+//}
